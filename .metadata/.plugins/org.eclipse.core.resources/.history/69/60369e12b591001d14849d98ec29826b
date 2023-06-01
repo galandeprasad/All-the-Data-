@@ -1,0 +1,26 @@
+package New_packages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class autosuggetions {
+
+	public static void main(String[] args) throws Exception
+	{
+		System.setProperty("webdriver.chrome.driver","D:/drivers/108/chromedriver.exe");
+	    WebDriver driver=new ChromeDriver();
+	    driver.get("https://rahulshettyacademy.com/dropdownsPractise/");  
+	    Thread.sleep(1000);
+        driver.findElement(By.xpath("//input[@id='autosuggest']")).sendKeys("ba");
+        Thread.sleep(1000);
+        driver.findElements(By.xpath("//input[@id='autosuggest']"));
+        for( WebElement options: listdata )
+        {
+        	
+        }
+
+	}
+
+}

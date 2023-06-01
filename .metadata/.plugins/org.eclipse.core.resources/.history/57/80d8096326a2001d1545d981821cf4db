@@ -1,0 +1,52 @@
+package test.testprojectMavelss;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class DemoClass {
+
+	public static void main(String[] args) throws Exception 
+	{
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://rahulshettyacademy.com/client");
+		driver.findElement(By.id("userEmail")).sendKeys("adiraj@gmail.com");
+		driver.findElement(By.id("userPassword")).sendKeys("Adiraj@123");
+		driver.findElement(By.id("login")).click();
+		//product page is open.
+		Thread.sleep(2000);
+		List<WebElement> lists = driver.findElements(By.cssSelector(".col-lg-4"));
+		WebElement values = lists.stream().filter(s->s.findElement(By.cssSelector("b")).getText().equals("ZARA COAT 3")).findFirst().orElse(null);
+		values.findElement(By.cssSelector(".col-lg-4 button:last-of-type")).click();
+		//on cart 
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//button[@routerlink='/dashboard/cart']")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//button[contains(text(),'Checkout')]")).click();
+        Thread.sleep(2000);
+        //Select the country
+        WebElement country = driver.findElement(By.xpath("//input[@placeholder='Select Country']"));
+        Actions a=new Actions(driver);
+        a.sendKeys(country,"india").build().perform();
+        Thread.sleep(2000);
+        //click on place order button
+        driver.findElement(By.xpath("//a[contains(text(),'Place Order ')]")).click();
+       
+      
+        
+        
+        
+        
+
+	}
+
+}

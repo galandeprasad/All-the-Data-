@@ -1,0 +1,32 @@
+package apiRestJavaProject;
+
+import org.testng.annotations.Test;
+
+import comman.ReUsableMethods;
+import comman.payload;
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+import static io.restassured.RestAssured.*;
+
+public class NewDynamic 
+{
+
+	@Test
+	public void Addbook()
+	{
+	
+		RestAssured.baseURI="http://216.10.245.166";
+		String getResopse = given().log().all().header("Content-Type","application/json")
+		.body(payload.AddBook("Prasad","5656")).when().post("/Library/Addbook.php").
+		then().log().all().assertThat().statusCode(200).extract().response().asString();
+		
+		JsonPath js = ReUsableMethods.rawToJson(getResopse);
+		String IDvalue = js.get("ID");
+		System.out.println(IDvalue);
+		
+		
+		
+	}
+	
+}

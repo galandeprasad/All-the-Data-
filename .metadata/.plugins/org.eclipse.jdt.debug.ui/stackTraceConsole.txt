@@ -1,0 +1,4 @@
+io.cucumber.java.PendingException: TODO: implement me
+	at stepDefination.stepDefination.add_place_payload(stepDefination.java:13)
+	at ?.Add Place Payload(file:///D:/workspace_selenium/TestReal/src/test/java/Features/test.feature:5)
+

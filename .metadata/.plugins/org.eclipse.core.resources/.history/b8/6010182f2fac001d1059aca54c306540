@@ -1,0 +1,25 @@
+package Treeni.ExtendReports;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Test1 
+{
+
+	
+	public void inintation()
+	{
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.get("https://utcltest.resustain.io/users/sign_in#/");
+		System.out.println(driver.getTitle());
+		
+		
+	}
+	
+	
+}

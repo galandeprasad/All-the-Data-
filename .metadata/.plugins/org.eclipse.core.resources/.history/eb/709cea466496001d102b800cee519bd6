@@ -1,0 +1,28 @@
+package flames;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class bottomLink {
+
+	public static void main(String[] args) 
+	{
+		System.setProperty("webdriver.chrome.driver","D:/drivers/108/chromedriver.exe");
+	    WebDriver driver=new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.get("https://rahulshettyacademy.com/AutomationPractice");
+	    System.out.println(driver.findElements(By.tagName("a")).size());
+	    //buttom of page
+	    System.out.println("Total number of link in the buttom");
+	    WebElement buttompage = driver.findElement(By.xpath("//div[@id='gf-BIG']"));
+	    System.out.println(buttompage.findElements(By.tagName("a")).size());
+	    //count the specifice column
+	     int sizes = buttompage.findElement(By.xpath("//ul[@xpath='1']"));
+	    System.out.println(sizes);
+	     
+
+	}
+
+}

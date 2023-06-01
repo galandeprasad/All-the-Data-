@@ -1,0 +1,13 @@
+package New_packages;
+
+public class multiple_browsers {
+
+	public static void main(String[] args)
+	{
+		System.setProperty("webdriver.chrome.driver","D:/drivers/108/chromedriver.exe");
+		
+
+
+	}
+
+}

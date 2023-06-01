@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-01T10:17:53 IST" name="Default suite" finished-at="2023-06-01T10:17:53 IST" duration-ms="54">
+    <groups>
+    </groups>
+    <test started-at="2023-06-01T10:17:53 IST" name="Default test" finished-at="2023-06-01T10:17:53 IST" duration-ms="54">
+      <class name="testda.checkAnnotatation">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testda.checkAnnotatation@625732]" started-at="2023-06-01T10:17:53 IST" name="beforeTest" finished-at="2023-06-01T10:17:53 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="BeforeMethodd()[pri:0, instance:testda.checkAnnotatation@625732]" started-at="2023-06-01T10:17:53 IST" name="BeforeMethodd" finished-at="2023-06-01T10:17:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodd -->
+        <test-method signature="Aest()[pri:1, instance:testda.checkAnnotatation@625732]" started-at="2023-06-01T10:17:53 IST" name="Aest" finished-at="2023-06-01T10:17:53 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testda.checkAnnotatation@625732]" started-at="2023-06-01T10:17:53 IST" name="afterMethod" finished-at="2023-06-01T10:17:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="BeforeMethodd()[pri:0, instance:testda.checkAnnotatation@625732]" started-at="2023-06-01T10:17:53 IST" name="BeforeMethodd" finished-at="2023-06-01T10:17:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodd -->
+        <test-method signature="Test2()[pri:2, instance:testda.checkAnnotatation@625732]" started-at="2023-06-01T10:17:53 IST" name="Test2" finished-at="2023-06-01T10:17:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testda.checkAnnotatation@625732]" started-at="2023-06-01T10:17:53 IST" name="afterMethod" finished-at="2023-06-01T10:17:53 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="Test1()[pri:3, instance:testda.checkAnnotatation@625732]" started-at="2023-06-01T10:17:53 IST" name="Test1" finished-at="2023-06-01T10:17:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method is-config="true" signature="BeforeMethodd()[pri:0, instance:testda.checkAnnotatation@625732]" started-at="2023-06-01T10:17:53 IST" name="BeforeMethodd" finished-at="2023-06-01T10:17:53 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethodd -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testda.checkAnnotatation@625732]" started-at="2023-06-01T10:17:53 IST" name="afterMethod" finished-at="2023-06-01T10:17:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:testda.checkAnnotatation@625732]" started-at="2023-06-01T10:17:53 IST" name="aftertest" finished-at="2023-06-01T10:17:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- testda.checkAnnotatation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

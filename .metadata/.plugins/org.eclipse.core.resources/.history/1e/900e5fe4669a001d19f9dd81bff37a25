@@ -1,0 +1,18 @@
+package Paginations;
+
+import java.util.stream.Stream;
+
+public class test2 {
+
+	public static void main(String[] args)
+	{
+      long vales = Stream.of("prasad","Rupali","Sonali").filter(s->{
+    	  
+    	  s.startsWith("a");
+    	  
+      }).count();
+      System.out.println(vales);
+       
+	}
+
+}
